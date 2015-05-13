@@ -1,0 +1,14 @@
+<html>
+	<head></head>
+	<script>
+		var agent = 'sweethax';
+		function loadTest() {
+			target = document.getElementById('target');
+			target.src = "http://localhost:9138/" + agent;
+		}
+	</script>
+
+	<body>
+		<iframe id='target' width=100% height=1000 onload=setTimeout(loadTest,50)></iframe>
+	</body>
+</html>
